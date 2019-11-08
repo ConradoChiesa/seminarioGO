@@ -22,5 +22,6 @@ func main() {
 	fmt.Println("Auto", auto1)
 
 	fmt.Println(agen.GetAutos())
-	agen.
+	agen.DeleteAuto(2)
+	fmt.Println(agen.GetAutos())
 }
