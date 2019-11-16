@@ -1,36 +1,36 @@
 package agencia
 
 type Auto struct {
-	patente   string
-	marca     string
-	modelo    int
-	velocidad int
+	Patente   string
+	Marca     string
+	Modelo    int
+	Velocidad int
 }
 
 func NewAuto(patente, marca string, modelo int) Auto  {
 	return Auto{
-		patente: patente,
-		marca:   marca,
-		modelo:  modelo,
+		Patente: patente,
+		Marca:   marca,
+		Modelo:  modelo,
 	}
 }
 
 func (a *Auto) Acelerar()  {
-	a.velocidad += 10
+	a.Velocidad += 10
 }
 
 func (a *Auto) Frenar() {
-	a.velocidad -= 10
+	a.Velocidad -= 10
 }
 
 func (a *Auto) SetPatente(p string) {
-	a.patente = p
+	a.Patente = p
 }
 
 func (a *Auto) SetMarca(m string) {
-	a.marca = m
+	a.Marca = m
 }
 
 func (a *Auto) SetModelo(m int) {
-	a.modelo = m
+	a.Modelo = m
 }
